@@ -1,0 +1,25 @@
+﻿
+.bigbox{
+    border-radius: 5px;
+    padding: 10px;
+    width:50vw;
+    max-width:350px ;
+    margin:30px auto;
+    background-color :rgba(173, 216, 230, 0.493);
+    border: 5px solid rgba(0, 0, 0, 0.432);
+}
+.head{
+    width: 250px;
+     margin:auto;
+}
+.column{
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+.tip{
+    width:400px;
+    margin:auto;
+}
