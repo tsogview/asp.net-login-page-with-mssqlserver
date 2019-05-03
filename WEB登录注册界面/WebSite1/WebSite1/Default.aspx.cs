@@ -57,6 +57,17 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Button2_Click(object sender, EventArgs e)//注册按钮
     {
+        if (TextBox1.Text == "")
+        {
+            Response.Write("<script>window.alert('没有输入用户名');</script>");
+            return;
+        }
+
+        else if (TextBox2.Text == "")
+        {
+            Response.Write("<script>window.alert('没有输入密码');</script>");
+            return;
+        }
         SqlConnection conn = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=login_webhw;Integrated Security=True");
         conn.Open();
         //先检查有没有已经存在了，这个用户
